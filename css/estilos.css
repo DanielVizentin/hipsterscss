@@ -1,11 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
+/* soft reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image:
-    url('https://marketplace.canva.com/EAD297uecnM/2/0/1600w/canva-rainbow-gradient-pink-orange-and-blue-zoom-virtual-background-VwJMC37j5jQ.jpg');
+    url('../img/background-creditos-canva.png');
   background-size: auto 100vh;
   font-family: 'Pacifico';
+  font-size: 10px;
   height: 100vh;
+}
+
+/* break point*/
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+header {
+  display: flex;
+  height: 100vh;
+  align-items: center;  
+  justify-content: center;
+}
+
+.menu{
+  background-color: paleturquoise;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .menu ul {
@@ -15,6 +44,11 @@ body {
 
 .menu li {
   list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 7.5px 20px;
 }
 
 a {
@@ -31,4 +65,9 @@ a:hover {
 .site-title {
   color: #555555;
   text-align: center;
+}
+
+.img-portfolio {
+  height: auto;
+  width: 180px;
 }
